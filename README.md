@@ -14,5 +14,5 @@ Configuration examples and UI components for simulating rogue access points in a
 
 This project is for educational purposes and authorized security testing only. The author is not responsible for any misuse or damage caused by this material.
 <p align="center">
-  <img src="Result_1.jepg" alt="Udola Tool Interface" width="700">
+  <img src="Result_1.jpeg" alt="Udola Tool Interface" width="700">
 </p>
